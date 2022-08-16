@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EEI3346 LAB Test 04</title>
+</head>
+<body>
+     <div>
+        <h1 style="text-align : center;">Calculator</h1>
+      </div>
+        <div style="text-align : center; border : 1px solid black; width : 30%; margin-left :35%;">
+          <p id="demo" style= "background-color : gray; height : 25px;">0</p>
+
+            <select id="mySelect" onchange="myFunction()">
+              <option value="Add">Add
+              <option value="Sub">Sub
+              <option value="Mul">Mul
+              <option value="Div">Div
+              </select>
+            
+
+            <script>
+              function myFunction() {
+              var x = document.getElementById("mySelect").value;
+              document.getElementById("demo").innerHTML = "You selected: " + x;
+              }
+              </script>
+
+            <br>
+          <input type="number" name="input1"><br>
+          <input type="number" name="input2"><br>
+          <input type="number"name="input3" ><br>
+          <input type="number" name="input4"><br>
+          <input type="button" name = "calculate" style="font-size:30px" value=" calculate " OnClick="Calculator.Input.value = 'eval(Calculator.Input.value'"> 
+          <input type="button" name = "clear" style="font-size:30px" value=" clear " OnClick="Calculator.Input.value = ''"><br>
+          </div>
+
+        
+
+</body>
+</html>
+
